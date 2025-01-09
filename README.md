@@ -16,3 +16,6 @@ Expecting actual:
 not to contain:
   "{cipher}"
 ```
+
+# Workaround
+Manually create a `@Bean` of type `Map<String, ResourceEncryptor>`, as shown in https://github.com/spring-cloud/spring-cloud-config/issues/1541.
